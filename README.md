@@ -1,6 +1,6 @@
 # Similarius
 
-Similarius is a Python library to compare web page and to evaluate the level of similarity. 
+Similarius is a Python library to compare web page and evaluate the level of similarity. 
 
 The tool can be used as a stand-alone tool or to feed other systems.
 
@@ -8,7 +8,7 @@ The tool can be used as a stand-alone tool or to feed other systems.
 
 # Requirements
 
-- Python 3.6+
+- Python 3.8+
 - [Requests](https://github.com/psf/requests)
 - [Scikit-learn](https://github.com/scikit-learn/scikit-learn)
 - [Beautifulsoup4](https://pypi.org/project/beautifulsoup4/)
