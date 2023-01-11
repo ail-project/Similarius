@@ -1,6 +1,6 @@
 # Similarius
 
-Similarius is a Python library to compare web page and evaluate the level of similarity. 
+Similarius is a Python library to compare web page and evaluate the level of similarity.
 
 The tool can be used as a stand-alone tool or to feed other systems.
 
@@ -25,8 +25,7 @@ The tool can be used as a stand-alone tool or to feed other systems.
 ~~~bash
 $ poetry install
 $ poetry shell
-$ cd similarius
-$ python similarius.py -h
+$ similarius -h
 ~~~
 
 ## pip installation
@@ -40,7 +39,7 @@ $ pip3 install similarius
 # Usage
 
 ~~~bash
-dacru@dacru:~/git/Similarius/similarius$ python3 similarius.py --help  
+dacru@dacru:~/git/Similarius/similarius$ similarius --help
 usage: similarius.py [-h] [-o ORIGINAL] [-w WEBSITE [WEBSITE ...]]
 
 optional arguments:
@@ -56,7 +55,7 @@ optional arguments:
 # Usage example
 
 ~~~bash
-dacru@dacru:~/git/Similarius/similarius$ python3 similarius.py -o circl.lu -w europa.eu circl.eu circl.lu
+dacru@dacru:~/git/Similarius/similarius$ similarius -o circl.lu -w europa.eu circl.eu circl.lu
 ~~~
 
 
