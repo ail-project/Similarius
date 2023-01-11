@@ -1,0 +1,7 @@
+from similarius.similarius import sk_similarity
+from similarius.similarius import text_from_html
+from similarius.similarius import find_list_resources
+from similarius.similarius import ressource_difference
+from similarius.similarius import ratio
+from similarius.similarius import get_website
+from similarius.similarius import extract_text_ressource

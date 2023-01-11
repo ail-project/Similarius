@@ -1,0 +1,4 @@
+requests
+scikit-learn
+beautifulsoup4
+nltk
