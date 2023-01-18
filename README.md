@@ -103,3 +103,10 @@ for website in args.website:
     print(f"Ratio: {ratio_compare}")
 ~~~
 
+
+
+# Acknowledgment
+
+![](./img/cef.png)
+
+The project has been co-funded by CEF-TC-2020-2 - 2020-EU-IA-0260 - JTAN - Joint Threat Analysis Network.
