@@ -657,14 +657,14 @@ telegram = ["requests"]
 
 [[package]]
 name = "types-beautifulsoup4"
-version = "4.12.0.3"
+version = "4.12.0.5"
 description = "Typing stubs for beautifulsoup4"
 category = "dev"
 optional = false
 python-versions = "*"
 files = [
-    {file = "types-beautifulsoup4-4.12.0.3.tar.gz", hash = "sha256:64b71d44d6a6030e39bb324dd51ef176bec158cd4d2994ed7213c1b2b8fa0785"},
-    {file = "types_beautifulsoup4-4.12.0.3-py3-none-any.whl", hash = "sha256:019e1a9096ecd12a37981d562cfed405398e6ed3c7717852c1f01871d052906a"},
+    {file = "types-beautifulsoup4-4.12.0.5.tar.gz", hash = "sha256:d9be456416a62a5b9740559592e1063a69d4b0a1b83911d878558c8ae8e07074"},
+    {file = "types_beautifulsoup4-4.12.0.5-py3-none-any.whl", hash = "sha256:718364c8e6787884501c700b1d22b6c0a8711bf9d6c9bf96e1fba81495bc46a8"},
 ]
 
 [package.dependencies]
