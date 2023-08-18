@@ -13,14 +13,15 @@ def main():
 
     parser = argparse.ArgumentParser()
     parser.add_argument("-o", "--original", help="Website to compare")
-    parser.add_argument("-w", "--website", nargs="+", help="Website to compare")
+    parser.add_argument("-w", "--website", nargs="+", help="Website(s) to compare")
     args = parser.parse_args()
 
     # Original
     original = get_website(args.original)
 
     if not original:
-        print("[-] The original website is unreachable...")
+        parser.print_help()
+        print("[-] The original website is not set")
         exit(1)
 
     original_text, original_ressource = extract_text_ressource(original.text)
