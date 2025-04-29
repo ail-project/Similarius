@@ -25,9 +25,9 @@ nltk.download('stopwords')
 # Similarity #
 ##############
 
-def sk_similarity(doc1: str, doc2: str) -> float:
+def sk_similarity(doc1: str, doc2: str, max_features: int = 500) -> float:
     ENGLISH_STOP_WORDS = set(stopwords.words('english')).union(set(sklearn_text.ENGLISH_STOP_WORDS)).union(set(string.punctuation))
-    vectorizer = TfidfVectorizer(stop_words=list(ENGLISH_STOP_WORDS), max_features=5000)
+    vectorizer = TfidfVectorizer(stop_words=list(ENGLISH_STOP_WORDS), max_features=max_features)
     tfidf = vectorizer.fit_transform([doc1, doc2])
 
     return round(((tfidf * tfidf.T).toarray())[0, 1] * 100)
