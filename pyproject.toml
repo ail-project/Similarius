@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "similarius"
-version = "0.0.2"
+version = "0.0.3"
 description = "Compare web page and evaluate the level of similarity."
 authors = [
 	"David Cruciani <david.cruciani@circl.lu>"
