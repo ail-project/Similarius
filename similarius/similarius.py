@@ -23,6 +23,8 @@ urllib3.disable_warnings(InsecureRequestWarning)
 # Shared session to reuse connections and reduce per-call allocations
 _SESSION = requests.Session()
 
+_SESSION.cookies.set_policy(requests.cookies.DefaultCookiePolicy(allowed_domains=[]))
+
 
 ##############
 # Similarity #
@@ -123,14 +125,13 @@ def ratio(ressource_diff: str, similarity: str) -> float:
             return round((int(ressource_diff) / int(similarity)) * int(ressource_diff), 2)
         else:
             return round((int(similarity) / int(ressource_diff)) * int(similarity), 2)
-    elif int(similarity) == 100:
-        return 0.05
     else:
         return 0.5
 
 
 def get_website(website: str) -> Optional[Response]:
     """Request the website pass in parameter"""
+    _SESSION.cookies.clear()
     candidates: List[str] = []
     parsed = urlparse(website)
 
