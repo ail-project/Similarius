@@ -1,5 +1,6 @@
 import string
 
+import http.cookiejar
 import requests
 from requests import Response
 import urllib3
@@ -23,7 +24,7 @@ urllib3.disable_warnings(InsecureRequestWarning)
 # Shared session to reuse connections and reduce per-call allocations
 _SESSION = requests.Session()
 
-_SESSION.cookies.set_policy(requests.cookies.DefaultCookiePolicy(allowed_domains=[]))
+_SESSION.cookies.set_policy(http.cookiejar.DefaultCookiePolicy(allowed_domains=[]))
 
 
 ##############
